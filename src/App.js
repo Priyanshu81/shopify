@@ -11,6 +11,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import "./index.css";
+import CartPage from './pages/CartPage';
 
 const router = createBrowserRouter([
   {
@@ -30,7 +31,13 @@ const router = createBrowserRouter([
     element: <div>
       <SignupPage></SignupPage>
     </div>
-  }
+  },
+  {
+    path: "/cart",
+    element: <div>
+      <CartPage></CartPage>
+    </div>
+  },
 ]);
  
 
